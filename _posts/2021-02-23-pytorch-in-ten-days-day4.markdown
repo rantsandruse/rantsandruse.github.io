@@ -13,7 +13,7 @@ typically much smaller than the number of parameters. How come neural networks d
 ### The concept of overfitting and underfitting in classical machine learning 
 This is how the concept of overfitting/underfitting is often explained in classical machine learning theory: 
 
-![plot](./figures/bias_variance_curve_combined.png)    
+![plot](./day4_img/bias_variance_curve_combined.png)    
 
 (left source: [Belkin et al, 2020.](https://www.pnas.org/content/116/32/15849.short) right source: [Cornell lecture on bias-variance tradeoff](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote12.html) 
 
@@ -45,7 +45,7 @@ ii) When we increase the model complexity (e.g. through increasing the number of
    This contradiction was explained by Belkin et al in their [PNAS paper](https://www.pnas.org/content/116/32/15849.short), which showed that the classical understanding is just 
    part of a bigger picture: 
    
-   ![plot](https://github.com/rantsandruse/pytorch_lstm_04imdb/blob/main/figures/double_descent.png) 
+   ![plot](./day4_img/double_descent.png) 
    (source: [Belkin et al, 2020](https://www.pnas.org/content/116/32/15849.short))   
    
    The prior risk curve represents what's happening in the under-parameterized region. As the model capacity grows larger, 
@@ -60,7 +60,7 @@ In this experiment, we'd like to understand how our LSTM model behaves under the
 come from a 8.1:0.9:1 split. Each experiment was run for a specific hidden dimension size for 200 epochs. With a range of hidden dimensions between 
 32 (42,624 parameters) and 2,048 (19,243,008 parameters) and a fairly small dataset (training sample size = 40,500), we are already under the over-parameterized condition. 
 
-![plot](https://github.com/rantsandruse/pytorch_lstm_04imdb/blob/main/figures/hidden_size_effect.png) 
+![plot](./day4_img/hidden_size_effect.png) 
 
 When the number of hidden dimensions varies from 32 to 2,048, our training accuracy ranges from 0.991 to 0.999, indicating a near-zero 
 training error. Based on the classical machine learning terminology, we are certainly "overfitting" to the training data. At the same time, 
@@ -78,11 +78,11 @@ to the trade-off between performance gain from increasing parameters and computa
  
    Briefly, they proposed to train the neural network in a smaller, randomly oriented subspace rather than the large, native space, using a random 
    projection matrix *P*:  
-    ![plot](https://github.com/rantsandruse/pytorch_lstm_04imdb/blob/main/figures/intrinsic_dim_paper1.png)    
+    ![plot](./day4_img/intrinsic_dim_paper1.png)    
 
    This way, the gradient of loss in a space of D dimensions moves into the d-dimensional subspace: 
    
-   ![plot](https://github.com/rantsandruse/pytorch_lstm_04imdb/blob/main/figures/intrinsic_dim_paper2.png) 
+   ![plot](./day4_img/intrinsic_dim_paper2.png) 
    (image source: [Yosinski et al](https://arxiv.org/abs/1804.08838)) 
 
    And finally, the intrinsic dimension is defined as d<sub>int90</sub>, or the d dimensions at which the model achieves 90% performance. 
@@ -134,7 +134,7 @@ And now we can run a range of experiments by varying the dimensions of the subsp
          run_experiment(dim)
 
 Our experiment shows that the intrinsic dimension of our LSTM model is ~400, or **0.4%** of the parameter size.
-![plot](https://github.com/rantsandruse/pytorch_lstm_04imdb/blob/main/figures/intrinsic_dimension_plot.png) 
+![plot](./day4_img/intrinsic_dimension_plot.png) 
 
 We only ran it for hidden dimension=64, but you are likely to see similar answers with a different choice, as the magnitude of intrinsic dimensions 
 is fairly robust to changes in layer width and depth. 
