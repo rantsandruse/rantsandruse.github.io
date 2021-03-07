@@ -89,7 +89,7 @@ random forest & GBM) with stochastic gradient descent based implementation.
         epoch_train_losses.append(np.mean(train_losses))
         epoch_val_losses.append(np.mean(val_losses))
 
-After training is done, we can visualize our training vs. validation loss in the following:![plot](./day2_img/train_vs_val_loss.png): 
+After training is done, we can visualize our training vs. validation loss in the following:![plot](/assets/day2_img/train_vs_val_loss.png): 
 
 ## How do we initialize hidden state? 
    In [tutorial 1](https://github.com/rantsandruse/pytorch_lstm_01intro/blob/main/README.md), you may have noticed that we 
