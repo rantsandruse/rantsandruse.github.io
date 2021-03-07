@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Pytorch with NLP in ten days - day 4"
+title:  "Pytorch with NLP in ten days - Day 4: LSTM with IMDB - Does your neural network overfit and why?"
 date:   2021-02-23 11:17:18 -0800
 categories: pytorch in ten days
 ---
-# Day 4: LSTM with IMDB - Does your neural network overfit and why?   
-
 Even a shallow neural network (e.g. an LSTM with one hidden layer) may have tens of thousands of parameters, whereas a 
 deep neural network (e.g. GPT3) could have billions of parameters. In the meantime, the size of training dataset size is 
 typically much smaller than the number of parameters. How come neural networks don't overfit?  

@@ -1,12 +1,10 @@
 ---
 layout: post
 title:  "Pytorch with NLP in ten days: Day 1 - How to train an LSTM tagger"
+subtitle: "And the relationship between NLL Loss, cross entropy loss and softmax..."  
 date:   2021-02-20 11:17:18 -0800
 categories: pytorch in ten days
 ---
-# Learning Pytorch in Ten Days: Day 1 - How to train an LSTM tagger 
-And the relationship between NLL Loss, cross entropy loss and softmax... 
-
 ##  Introduction 
 
 As I was teaching myself pytorch for applications in deep learning/NLP, I noticed that there is certainly no lacking of 

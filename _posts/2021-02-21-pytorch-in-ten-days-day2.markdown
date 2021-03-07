@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Pytorch with NLP in ten days - Day 2 - Train an LSTM model in minibatch (with proper initialization and padding)"
+title:  "Pytorch with NLP in ten days: Day 2 - Train an LSTM model in minibatch"
+subtitle: "With proper initialization and padding"
 date:   2021-02-21 11:17:18 -0800
 categories: pytorch in ten days
 ---

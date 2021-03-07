@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Pytorch with NLP in ten days - day 3"
+title:  "Pytorch with NLP in ten days - Day 3: Change an LSTM Tagger to LSTM classifier"
+subtitle:  "With five lines of code" 
 date:   2021-02-22 11:17:18 -0800
 categories: pytorch in ten days
 ---
-# Learn pytorch in 10 days - Day 3: Change an LSTM Tagger to LSTM classifier (with ~5 lines of code)
-
 The main goal of day 3 is to modify an LSTM tagger to an LSTM classifier. This will contribute 
 to our ultimate goal of the week, which is to train a state-of-the-art binary sequence classifier for IMDB sentiment analysis.
   
