@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pytorch with NLP in ten days - day 1"
+title:  "Pytorch with NLP in ten days: Day 1 - How to train an LSTM tagger"
 date:   2021-02-20 11:17:18 -0800
 categories: pytorch in ten days
 ---
