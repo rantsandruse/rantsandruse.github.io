@@ -1,12 +1,10 @@
 ---
 layout: post
 title:  "Pytorch with NLP in ten days: Day 2 - Train an LSTM model in minibatch"
-subtitle: "With proper initialization and padding"
+subtitle:  "With proper initialization and padding"
 date:   2021-02-21 11:17:18 -0800
 categories: pytorch in ten days
 ---
-# Learning Pytorch in Ten Days: Day 2 - Train an LSTM model in minibatch (with proper initialization and padding) 
-
 In day 1 tutorial, we've learned how to work with a very simple LSTM network, by training the model on a single batch of toy data over 
 multiple epochs. In this tutorial, I will show you how to train an LSTM model in minibatches, with proper 
 variable initialization and padding. 
