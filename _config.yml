@@ -21,7 +21,7 @@
 title: Random notes on ML/DL/LLM
 email: rantsandruse AT gmail DOT com
 description: >- # this means to ignore newlines until "baseurl:"
-  Techical blog on ML & DL tools, applications & research. The current focus is on NLP/pytorch.  
+  Techical blog on ML/DL/LLM tools, applications & research. The current focus is NLP.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com#
 #twitter_username: jekyllrb
