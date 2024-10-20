@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pytorch with NLP in ten days - Day 4: LSTM with IMDB - Does your neural network overfit and why?"
+title:  "Pytorch with NLP in five days - Day 4: LSTM with IMDB - Does your neural network overfit and why?"
 date:   2021-02-23 11:17:18 -0800
 categories: pytorch in ten days
 ---

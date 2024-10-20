@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pytorch with NLP in ten days - Day 3: Change an LSTM Tagger to LSTM classifier"
+title:  "Pytorch with NLP in five days - Day 3: Change an LSTM Tagger to LSTM classifier"
 subtitle:  "With five lines of code" 
 date:   2021-02-22 11:17:18 -0800
 categories: pytorch in ten days
